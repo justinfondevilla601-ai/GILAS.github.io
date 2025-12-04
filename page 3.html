@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Content Overview</title>
+<link rel="stylesheet" href="page 3.css ">
+</head>
+<body><div class="header">
+        <div class="logo-section">
+            <a href="index.html"><img src="page2logo.jpg" alt="LOGO"></a>
+            <div class="brand-text">Guarding Internet users through Literacy & Awareness for Security</div>
+        </div>
+    </div>
+
+<div class="container">
+
+    <div class="left-column">
+        <h1>CONTENT<br>OVERVIEW</h1>
+    </div>
+    
+    <div class="box-controls">
+                <button class="nav-button" onclick="window.location.href='index.html'">Previous</button>
+            </div>
+
+
+    <div class="right-column">
+
+        <!-- 1 SECTION -->
+        <div class="section">
+            <div class="title-btn" onclick="toggleText('text1')">
+                <span class="arrow" id="arrow1">▶</span>
+                <a href="page6.html" class="title-link">Understanding Online Threats</a>
+            </div>
+            <div class="hidden-text" id="text1">
+                Learn common internet risks and how they affect the users. <br>
+            </div>
+        </div>
+
+        <!-- 2 SECTION -->
+        <div class="section">
+            <div class="title-btn" onclick="toggleText('text2')">
+                <span class="arrow" id="arrow2">▶</span>
+                <a href="page5.html" class="title-link"> Building Safe Digital Habits</a>
+
+            </div>
+            <div class="hidden-text" id="text2">
+                Practice secure behaviors like strong passwords and careful browsing.<br>
+            
+
+
+            </div>
+        </div>
+
+        <!-- 3 SECTION -->
+        <div class="section">
+            <div class="title-btn" onclick="toggleText('text3')">
+                <span class="arrow" id="arrow3">▶</span>
+                 <a href="page4.html" class="title-link"> Enhancing Cybersecurity Awareness</a>
+            </div>
+            <div class="hidden-text" id="text3">
+              Recognize risks and use of tools to stay safe online.<br>
+            </div>
+      
+        </div>
+
+    </div>
+</div>
+
+  <footer>
+        <p>G.I.L.A.S Tech PH - Guarding Internet Users Through Literacy & Awareness for Security &copy; 2025 G.I.L.A.S. All rights reserved.</p>    
+    </footer>
+<script>
+function toggleText(id) {
+    const text = document.getElementById(id);
+    const arrow = document.getElementById("arrow" + id.replace("text", ""));
+    
+    if (text.style.display === "block") {
+        text.style.display = "none";
+        arrow.classList.remove("rotate");
+    } else {
+        text.style.display = "block";
+        arrow.classList.add("rotate");
+    }
+}
+</script>
+
+</body>
+</html>

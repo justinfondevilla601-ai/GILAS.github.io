@@ -1,0 +1,166 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial,  sans-serif;
+    background: linear-gradient(90deg, #f29ac0, #9d8ff5);
+    color: #ffffff;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-section img {
+    width: 220px;
+    height: auto;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.brand-text {
+    background: rgb(255, 253, 253);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #6b3ba0;
+}
+
+/* Navigation */
+.nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #6b3ba0;
+    font-weight: bold;
+    font-size: 16px;
+    background: rgb(241, 236, 236);
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.nav a:hover {
+    opacity: 0.9;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.nav a:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow: none;
+    opacity: 1;
+}
+
+.nav a:focus {
+    outline: 3px solid rgba(102,126,234,0.25);
+    outline-offset: 3px;
+}
+
+/* Main Banner */
+.banner-container {
+    margin: 40px auto;
+    width: 85%;
+    background: rgba(60, 40, 150, 0.6);
+    border-radius: 60px;
+    padding: 40px;
+}
+
+.banner {
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: blur(1px) brightness(70%);
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+}
+
+.banner-text h1 {
+    font-size: 60px;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+
+.banner-text h2 {
+    font-size: 55px;
+    margin: 10px 0;
+    font-weight: 800;
+}
+
+.banner-text p {
+    font-size: 20px;
+    margin-top: 15px;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+/* Button */
+.banner-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 40px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #6b3ba0;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.banner-btn:hover {
+    background: rgb(255, 255, 255);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.banner-btn:active {
+    transform: scale(0.98);
+    box-shadow: none;
+}
+
+/* Footer */
+.footer {
+    background-color: #0000006b;
+    text-align: center;
+    padding: 10px;
+    position: downer;
+    width: 98.5%;
+    bottom: 0;
+}
+
+.footer p {
+    margin: 10px 0;
+}

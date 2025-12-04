@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #f29ac0, #9d8ff5);
+    color: rgb(241, 239, 239);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+}
+
+.header {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;  
+    width: 100%;          
+    margin-bottom: 20px;
+}
+.logo img {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+.logo-section img {
+    width: 220px;
+    height: auto;
+    transition: transform 200ms ease, box-shadow 200ms ease;
+    display: block;
+}
+
+.logo-section a {
+    display: inline-block;
+    line-height: 0;
+    text-decoration: none;
+    outline: none;
+}
+.brand-text {
+    background: rgb(250, 249, 249);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #6b3ba0;
+}
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.logo-section a:hover img,
+.logo-section a:focus img {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: none;
+}
+.nav-controls {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* Adds spacing between each link */
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-icons a:hover {
+    color: #FF7F7F;
+}
+.social-logo {
+    width: 60px; /* Adjust the width of the logos */
+    height: auto;
+}
+
+.icon {
+    font-size: 1.5rem; /* Keeps the emoji size consistent with the text */
+}
+
+
+footer {
+    background-color: #00000077;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}

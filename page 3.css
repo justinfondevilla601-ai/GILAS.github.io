@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+     background: linear-gradient(90deg, #f29ac0, #9d8ff5);
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px;
+}
+
+.left-column {
+    width: 40%;
+}
+
+.right-column {
+    width: 44%;
+    padding-right: 40px; /* para hindi sagad sa dulo */
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* aligns content near the top */
+    align-items: left; /* center horizontally */
+    height: 45vh; /* adjust as needed */
+    padding-top: 1px; /* extra space from top if needed */
+    text-align: left;
+     margin-top:-100px;
+     font-weight: bold;
+     font-size: 20px; /* palakihin (pwede 18–28px depende sayo) */
+    font-weight: 600;
+}
+
+
+.title-btn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.arrow {
+    margin-right: 15px;
+    transition: transform 0.3s;
+}
+
+.arrow.rotate {
+    transform: rotate(90deg);
+}
+
+.hidden-text {
+    display: none; /* initially hidden */
+    margin-top: 10px;
+}
+
+.title-link {
+    color: white;
+    text-decoration: none;
+}
+
+.title-link:hover {
+    text-decoration: none;
+}
+
+.header {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;  
+    width: 100%;          
+    margin-bottom: 40px;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+.content {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 12px;
+    white-space: pre-wrap;
+    text-align: left;
+}
+.bold-w {
+    font-weight: bold;
+    font-size: 14px; 
+}
+.logo-section img {
+    width: 220px;
+    height: auto;
+    transition: transform 200ms ease, box-shadow 200ms ease;
+    display: block;
+}
+
+.logo-section a {
+    display: inline-block;
+    line-height: 0;
+    text-decoration: none;
+    outline: none;
+}
+.brand-text {
+    background: rgb(255, 253, 253);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #6b3ba0;
+}
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.logo-section a:hover img,
+.logo-section a:focus img {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: none;
+}
+.nav-controls {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.nav-button {
+    text-decoration: none;
+    color: #6b3ba0;
+    background: rgb(241, 236, 236);
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.nav-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.box-controls {
+    display: flex; 
+    text-align: leftside;
+    margin-top: 300px;
+    margin-left: -700px;
+}
+footer {
+    background-color: #00000077;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
